@@ -3,98 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ret-A | Bienestar & Transformación</title>
+    <title>Ret-A | Oficial España & Europa</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        body { background-color: #f5f5f7; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        .bento-card { background: white; border-radius: 24px; transition: transform 0.2s; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-        .bento-card:hover { transform: scale(1.02); }
-        .btn-gradient { background: linear-gradient(135deg, #007aff, #0051af); }
+        :root {
+            --primary-blue: #0a2540; /* Azul de tu logo */
+            --accent-blue: #007aff;
+            --bg-gray: #f5f5f7;
+        }
+        body { background-color: var(--bg-gray); font-family: 'Inter', sans-serif; color: #1d1d1f; }
+        .glass-card { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); border-radius: 32px; border: 1px solid rgba(255,255,255,0.3); }
+        .bento-card { background: white; border-radius: 28px; box-shadow: 0 10px 30px rgba(0,0,0,0.03); overflow: hidden; }
+        .btn-black { background: #1d1d1f; color: white; border-radius: 100px; transition: all 0.3s ease; }
+        .btn-black:hover { transform: scale(1.05); background: #000; }
+        .step-number { width: 32px; height: 32px; background: var(--primary-blue); color: white; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-weight: bold; }
     </style>
 </head>
-<body class="p-4 md:p-8">
+<body class="p-4 md:p-10">
 
-    <div class="max-w-md mx-auto space-y-4">
+    <div class="max-w-lg mx-auto space-y-6">
         
-        <div class="text-center py-6">
-            <div class="w-24 h-24 bg-white rounded-full mx-auto mb-4 flex items-center justify-center shadow-sm overflow-hidden">
-                <img src="TU_LOGO_AQUI.png" alt="Logo Ret-A" class="w-full h-full object-cover">
-            </div>
-            <h1 class="text-2xl font-bold text-gray-800 tracking-tight">Ret-A Truide</h1>
-            <p class="text-blue-600 font-medium">Distribución Oficial España & Europa</p>
+        <div class="flex justify-between items-center px-2">
+            <div class="text-2xl font-bold tracking-tighter text-[--primary-blue]">Ret-A</div>
+            <div class="text-xs font-bold uppercase tracking-widest text-gray-400">Distribución Oficial</div>
         </div>
 
-        <div class="bento-card p-6">
-            <h2 class="text-lg font-bold mb-4 text-gray-700">¿Por qué elegir Ret-A?</h2>
-            <div class="grid grid-cols-2 gap-3">
-                <div class="bg-blue-50 p-3 rounded-2xl text-center">
-                    <i class="fas fa-bullseye text-blue-600 mb-2"></i>
-                    <p class="text-xs font-semibold">Control de Apetito</p>
-                </div>
-                <div class="bg-blue-50 p-3 rounded-2xl text-center">
-                    <i class="fas fa-bolt text-blue-600 mb-2"></i>
-                    <p class="text-xs font-semibold">Metabolismo 2.0</p>
-                </div>
-                <div class="bg-blue-50 p-3 rounded-2xl text-center">
-                    <i class="fas fa-flask text-blue-600 mb-2"></i>
-                    <p class="text-xs font-semibold">Ciencia Aplicada</p>
-                </div>
-                <div class="bg-blue-50 p-3 rounded-2xl text-center">
-                    <i class="fas fa-shield-heart text-blue-600 mb-2"></i>
-                    <p class="text-xs font-semibold">Bienestar Real</p>
+        <div class="relative bento-card h-80 flex items-end p-8 bg-cover bg-center" style="background-image: linear-gradient(to top, rgba(10,37,64,0.9), rgba(0,0,0,0)), url('PON_AQUI_LINK_IMAGEN_FONDO');">
+            <div class="z-10 w-full">
+                <h1 class="text-3xl font-bold text-white leading-tight">Ciencia avanzada que<br>simplemente funciona.</h1>
+                <p class="text-blue-100 text-sm mt-2 opacity-90">Tu aliado metabólico para una transformación real y garantizada.</p>
+                <div class="flex justify-end mt-4">
+                    <a href="TU_LINK_TELEGRAM" class="btn-black px-6 py-2 text-sm font-medium">Explorar Plan</a>
                 </div>
             </div>
         </div>
 
-        <div class="bento-card p-6">
-            <h2 class="text-lg font-bold mb-3 text-gray-700">Tu Pedido Incluye</h2>
-            <ul class="space-y-3 text-sm text-gray-600">
-                <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Vial Original Ret-A Truide</li>
-                <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Plan Nutricional Personalizado</li>
-                <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Manual de Seguimiento PDF</li>
-                <li class="flex items-center"><i class="fas fa-truck text-blue-500 mr-2"></i> Envío Garantizado (24-48h)</li>
-            </ul>
+        <div class="space-y-4">
+            <h2 class="text-2xl font-bold px-2">¿Por qué elegir Ret-A?</h2>
+            <p class="text-gray-500 text-sm px-2">Comercializamos Ret-A Truide con soporte garantizado en toda la Unión Europea.</p>
+            
+            <div class="bento-card p-6 flex items-center space-x-4 bg-gradient-to-r from-slate-800 to-slate-900 text-white">
+                <div class="step-number bg-white !text-slate-900">1</div>
+                <div>
+                    <h3 class="font-bold">Máxima Pureza Garantizada</h3>
+                    <p class="text-xs opacity-70">Péptidos certificados con estándares de laboratorio europeo.</p>
+                </div>
+            </div>
+
+            <div class="bento-card p-6 flex items-center space-x-4">
+                <div class="step-number">2</div>
+                <div>
+                    <h3 class="font-bold">Resultados en Tiempo Récord</h3>
+                    <p class="text-xs text-gray-500">Optimización metabólica diseñada para ser efectiva desde la primera dosis.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="space-y-4">
+            <h2 class="text-2xl font-bold px-2">Tu Plan Incluye</h2>
+            
+            <div class="bento-card p-4 flex items-center">
+                <div class="w-24 h-24 bg-gray-100 rounded-2xl flex-shrink-0 flex items-center justify-center">
+                    <img src="LINK_FOTO_PEPTIDO" alt="Ret-A" class="max-h-20">
+                </div>
+                <div class="ml-4 flex-grow">
+                    <h3 class="font-bold text-gray-800">Vial Ret-A Truide</h3>
+                    <ul class="text-[10px] text-gray-500 mt-1">
+                        <li>• Pureza superior</li>
+                        <li>• Formato alta absorción</li>
+                    </ul>
+                </div>
+                <a href="TU_LINK_TELEGRAM" class="btn-black p-2 w-10 h-10 flex items-center justify-center">
+                    <i class="fas fa-plus text-xs"></i>
+                </a>
+            </div>
+
+            <div class="bento-card p-4 flex items-center">
+                <div class="w-24 h-24 bg-gray-100 rounded-2xl flex-shrink-0 flex items-center justify-center text-3xl">🥗</div>
+                <div class="ml-4 flex-grow">
+                    <h3 class="font-bold text-gray-800">Plan Nutricional</h3>
+                    <ul class="text-[10px] text-gray-500 mt-1">
+                        <li>• 1 mes gratuito</li>
+                        <li>• Adaptado a tus objetivos</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bento-card p-4 flex items-center">
+                <div class="w-24 h-24 bg-blue-50 rounded-2xl flex-shrink-0 flex items-center justify-center text-3xl">🚚</div>
+                <div class="ml-4 flex-grow">
+                    <h3 class="font-bold text-gray-800">Envío Express Gratis</h3>
+                    <ul class="text-[10px] text-gray-500 mt-1">
+                        <li>• Entrega en 24h (España)</li>
+                        <li>• Punto de recogida o domicilio</li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
         <div class="space-y-3">
-            <a href="LINK_TU_PDF" class="bento-card p-4 flex items-center justify-between w-full block hover:bg-gray-50">
-                <div class="flex items-center">
-                    <i class="far fa-file-pdf text-red-500 text-xl mr-4"></i>
-                    <span class="font-medium text-gray-700">Manual de Instrucciones</span>
-                </div>
-                <i class="fas fa-chevron-right text-gray-300 text-sm"></i>
-            </a>
-
-            <a href="LINK_VIDEO_1" class="bento-card p-4 flex items-center justify-between w-full block hover:bg-gray-50">
-                <div class="flex items-center">
-                    <i class="fas fa-play-circle text-blue-500 text-xl mr-4"></i>
-                    <span class="font-medium text-gray-700">Video: Cómo Reconstituir</span>
-                </div>
-                <i class="fas fa-chevron-right text-gray-300 text-sm"></i>
-            </a>
+            <h2 class="text-2xl font-bold px-2">Dudas frecuentes</h2>
+            <div class="bg-white rounded-3xl p-2 space-y-1">
+                <details class="p-4 group">
+                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+                        <span>¿Es seguro el envío?</span>
+                        <div class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center group-open:rotate-45 transition">
+                            <i class="fas fa-plus text-xs"></i>
+                        </div>
+                    </summary>
+                    <p class="text-sm text-gray-500 mt-2">Garantizamos la recepción en 24-48h. Si hay cualquier problema, nos hacemos responsables del reenvío.</p>
+                </details>
+                <hr class="border-gray-50 mx-4">
+                <details class="p-4 group">
+                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+                        <span>¿Cómo recibo el plan nutricional?</span>
+                        <div class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center group-open:rotate-45 transition text-blue-600">
+                            <i class="fas fa-plus text-xs"></i>
+                        </div>
+                    </summary>
+                    <p class="text-sm text-gray-500 mt-2">Tras tu compra, recibirás un enlace de descarga directa y acceso al área de miembros.</p>
+                </details>
+            </div>
         </div>
 
-        <div class="bento-card p-6">
-            <h2 class="text-lg font-bold mb-3 text-gray-700 underline decoration-blue-200">Dudas frecuentes</h2>
-            <details class="mb-2 cursor-pointer">
-                <summary class="font-semibold text-sm text-gray-600">¿Envían a toda Europa?</summary>
-                <p class="text-xs p-2 text-gray-500">Sí, envíos express nacionales (España) y europeos.</p>
-            </details>
-            <details class="cursor-pointer">
-                <summary class="font-semibold text-sm text-gray-600">¿Cómo realizo el pago?</summary>
-                <p class="text-xs p-2 text-gray-500">El pago se coordina por chat directo mediante métodos seguros.</p>
-            </details>
+        <div class="pt-6">
+            <a href="TU_LINK_TELEGRAM" class="w-full bg-blue-600 text-white py-6 rounded-[30px] font-bold text-center block shadow-2xl shadow-blue-200">
+                <i class="fab fa-telegram-plane mr-2"></i> Solicitar Asesoría Personalizada
+            </a>
+            <p class="text-center text-[10px] text-gray-400 mt-4">© 2026 Ret-A Oficial España. Envíos a toda Europa.</p>
         </div>
-
-        <a href="https://t.me/TU_USUARIO" class="btn-gradient w-full py-5 rounded-3xl text-white font-bold text-center block shadow-lg text-lg">
-            🚀 HABLAR CON ASESOR (PEDIDOS)
-            <span class="block text-xs font-normal opacity-80">Asesoría personalizada inmediata</span>
-        </a>
 
     </div>
-
-    <p class="text-center text-gray-400 text-xs py-10">Ret-A Truide © 2026 - Todos los derechos reservados</p>
 
 </body>
 </html>
